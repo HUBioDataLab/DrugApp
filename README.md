@@ -5,7 +5,7 @@ In this study/repository, we presented a programmatic tool called “DrugApp”,
 * We showed the potential of our method for revealing drugs that were withdrawn from the market sometime after their approval, indicating that it may be possible to act upon those cases in the first place to potentially prevent critical losses regarding human health. 
 The modeling methodology of this study is summarized below.
 
-![Modeling Methodology](https://user-images.githubusercontent.com/108183756/177337662-9f42bb26-37e1-41c6-ae2c-8dbf70a6e89f.PNG)
+![Modeling Methodology](https://user-images.githubusercontent.com/108183756/177561886-7b15e9b2-74bf-4ee6-9092-146d9cb3c836.PNG)
 
 ## Programming Environment and Files
 **Descriptions of folders and files:**
