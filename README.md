@@ -36,8 +36,7 @@ pip install numpy==1.16.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
-3. Download datasets. Place the datasets in the cloned repository at the same level as the **scripts**. 
-4. Set the location as the current working directory, and run the corresponding script to build models at the data scale of your interest.
+3. Set the location as the current working directory, and run the corresponding script to build models at the data scale of your interest. 
 
 **Example commands to run the scripts for building models of interest:**
    
@@ -52,7 +51,7 @@ python rf_model_for_predicting_drug_approval.py Rare
 For determining evaluation metrics and feature importances for specific disease group, run the "evaluation_metrics_and_feature_importance.py" script by defining the name of the unique_drug dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
    
 ```
-python rf_model_for_predicting_drug_approval.py Rare
+python evaluation_metrics_and_feature_importance.py Rare
 ```
    
 ## License
