@@ -14,7 +14,7 @@ The modeling methodology of this study is summarized below.
     * **drug_indication** folder contains FDA-approved and FDA-unapproved drug indication pairs together with all features. One-hot encoded version of categorical features are also provided. FDA-approved and FDA-unapproved drugs are represented in the column called "Label" in binary classification format (i.e., 1:approved, 0:unapproved).
     * **to_be_predicted** folder contains drug indication pairs together with all features for ongoing clinical trials.
     * **unique_drugs** folder contains unique FDA-approved and FDA-unapproved drugs together with randomly selected indications and all other features used for the construction of model as well as for the determination of evaluation metrics and feature importances. 
-*	**scripts** folder includes script files required for the construction of model as well as for the determination of evaluation metrics and feature importances.
+*	**scripts** folder includes script files required for the construction of model for predicting drug approval as well as for the determination of evaluation metrics and feature importances.
 *	**results** folder contains prediction results of all disease groups for ongoing clinical trials. 
 
 **Dependencies:**
@@ -36,11 +36,11 @@ pip install numpy==1.16.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
-3. Set the location as the current working directory, and run the corresponding script to build models at the data scale of your interest. 
+3. Set the location as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
 
-**Example commands to run the scripts for building models of interest:**
+**Example commands to run the scripts for predicting drug approval for disease class of your interest:**
    
-For generating models for specific disease group, run the "rf_model_for_predicting_drug_approval.py" script for RF algorithm by defining the name of the drug_indication dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
+For for predicting drug approval for specific disease group, run the "rf_model_for_predicting_drug_approval.py" script for RF algorithm by defining the name of the drug_indication dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
    
 ```
 python rf_model_for_predicting_drug_approval.py Rare
