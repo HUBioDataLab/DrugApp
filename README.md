@@ -40,7 +40,7 @@ pip install matplotlib==3.2.2
 
 **Example commands to run the scripts for predicting drug approval for disease class of your interest:**
    
-For predicting drug approval for specific disease group, run the "rf_model_for_predicting_drug_approval.py" script for RF algorithm by defining the name of the drug_indication dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
+For predicting drug approval for a specific disease group, run the "rf_model_for_predicting_drug_approval.py" script for RF algorithm by defining the name of the drug_indication dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
    
 ```
 python rf_model_for_predicting_drug_approval.py Rare
@@ -48,7 +48,7 @@ python rf_model_for_predicting_drug_approval.py Rare
 
 **Example commands to run the scripts for evaluation metrics and feature importances:**
    
-For determining evaluation metrics and feature importances for specific disease group, run the "evaluation_metrics_and_feature_importance.py" script by defining the name of the unique_drug dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
+For determining evaluation metrics and feature importances for a specific disease group, run the "evaluation_metrics_and_feature_importance.py" script by defining the name of the unique_drug dataset (i.e., "Alimentary", "Anti-infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
    
 ```
 python evaluation_metrics_and_feature_importance.py Rare
