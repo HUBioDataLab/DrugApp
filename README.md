@@ -32,7 +32,7 @@ conda create -n drugapp python=3.7.4
 conda activate drugapp
 conda install -c anaconda scikit-learn=1.0.2
 conda install -c anaconda pandas=1.0.3
-pip install numpy==1.16.5
+pip install numpy==1.19.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
