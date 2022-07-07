@@ -34,7 +34,7 @@ pip install numpy==1.19.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
-3. Set the location of the "DrugApp" folder as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
+3. Set the location of the "scripts" folder present in "DrugApp" folder as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
 
 **Example commands to run the scripts for predicting drug approval for disease class of your interest:**
    
