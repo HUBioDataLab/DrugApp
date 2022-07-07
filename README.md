@@ -34,8 +34,7 @@ pip install numpy==1.19.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
-3. Place "dataset" folder at the same level with "scripts" folder.
-4. Set the location of the "scripts" folder as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
+3. Set the location of the "DrugApp" folder as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
 
 **Example commands to run the scripts for predicting drug approval for disease class of your interest:**
    
@@ -44,6 +43,8 @@ For predicting drug approval for a specific disease group, run the "rf_model_for
 ```
 python rf_model_for_predicting_drug_approval.py Rare
 ```
+
+The output will be a csv file named as "Predictions" (e.g. Predictions_Rare).
 
 **Example commands to run the scripts for evaluation metrics and feature importances:**
    
