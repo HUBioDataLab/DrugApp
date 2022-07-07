@@ -26,7 +26,7 @@ The modeling methodology of this study is summarized below.
 * Matplotlib 3.2.2
 
 **Step-by-step operation:**
-1. We highly recommend you to use conda platform for installing dependencies properly. After installation of appropriate [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) version for your operating system, create and activate conda environment, and then install dependencies in the activated environment, as below:
+1. We highly recommend you to use conda platform for installing dependencies properly. After installation of appropriate [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) version for your operating system, install dependencies in the activated environment, as below:
 ```
 conda install -c anaconda scikit-learn=1.0.2
 conda install -c anaconda pandas=1.0.3
