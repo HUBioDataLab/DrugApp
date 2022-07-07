@@ -22,22 +22,20 @@ The modeling methodology of this study is summarized below.
 * Python 3.7.4
 * Scikit-learn 1.0.2
 * Pandas 1.0.3
-* Numpy 1.16.5
+* Numpy 1.19.5
 * Matplotlib 3.2.2
 
 **Step-by-step operation:**
 1. We highly recommend you to use conda platform for installing dependencies properly. After installation of appropriate [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) version for your operating system, create and activate conda environment, and then install dependencies in the activated environment, as below:
 ```
-conda create -n drugapp python=3.7.4
-conda activate drugapp
 conda install -c anaconda scikit-learn=1.0.2
 conda install -c anaconda pandas=1.0.3
 pip install numpy==1.19.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
-3. Place the dataset folder at the same level with the two script files.
-4. Set the location of the script files as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
+3. Place "dataset" folder at the same level with "scripts" folder.
+4. Set the location of the "scripts" folder as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
 
 **Example commands to run the scripts for predicting drug approval for disease class of your interest:**
    
