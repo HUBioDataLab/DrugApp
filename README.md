@@ -13,7 +13,7 @@ The modeling methodology of this study is summarized below.
 *	**datasets** folder includes benchmark datasets constructed by applying extensive filtering operations. 
     * **drug_indication** folder contains FDA-approved and FDA-unapproved drug indication pairs together with all features. One-hot encoded version of categorical features are also provided. FDA-approved and FDA-unapproved drugs are represented in the column called "Label" in binary classification format (i.e., 1:approved, 0:unapproved).
     * **to_be_predicted** folder contains drug indication pairs together with all features for ongoing clinical trials.
-    * **unique_drugs** folder contains unique FDA-approved and FDA-unapproved drugs together with randomly selected indications and all other features used for the construction of model as well as for the determination of evaluation metrics and feature importances. 
+    * **unique_drugs** folder contains unique FDA-approved and FDA-unapproved drugs together with randomly selected indications and all other features used for the determination of evaluation metrics and feature importances. 
 *	**scripts** folder includes script files required for the construction of model for predicting drug approval as well as for the determination of evaluation metrics and feature importances.
 *	**results** folder contains prediction results of each disease group for ongoing clinical trials. 
 
