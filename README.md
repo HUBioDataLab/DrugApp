@@ -5,7 +5,9 @@ In this repository, we presented a programmatic tool called “DrugApp”, that 
 * We presented important features for drug approval prediction, which can be used by both commercial and non-commercial entities to increase the efficiency of drug development procedures.
 The modeling methodology of this study is summarized below.
 
-![Modeling Methodology](https://user-images.githubusercontent.com/108183756/177561886-7b15e9b2-74bf-4ee6-9092-146d9cb3c836.PNG)
+
+<img width="1201" alt="DrugApp_Figure1" src="https://user-images.githubusercontent.com/13165170/178265643-25759b13-cb62-414d-89b9-9a619eb2e5a2.png">
+
 
 ## Programming Environment and Files
 **Descriptions of folders and files:**
