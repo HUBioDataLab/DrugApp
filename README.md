@@ -28,7 +28,7 @@ The methodology followed while developing DrugApp is shown below.
 * Numpy 1.19.5
 * Matplotlib 3.2.2
 
-**Step-by-step operation:**
+**Step-by-step operation for installation:**
 1. We recommend to use conda platform for installing dependencies properly. After installation of appropriate [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) version for your operating system, install dependencies as below:
 ```
 conda install -c anaconda scikit-learn=1.0.2
