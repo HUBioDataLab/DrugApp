@@ -1,23 +1,22 @@
 # DrugApp: A Method for Machine Learning-based Prediction of Drug Approval
-In this repository, we presented a programmatic tool called “DrugApp”, that utilize available clinical trial- and patent-related data together with physicochemical and molecular features of drugs candidate compounds within a random forest classifier to predict their potential of getting approval as drugs for certain indications. The major contributions of our study are summarized below:
-* We showed the high potential of our method for predicting drug approval. 
-* We proposed comprehensive datasets, which can be useful for further computational studies as benchmarks.
-* We presented important features for drug approval prediction, which can be used by both commercial and non-commercial entities to increase the efficiency of drug development procedures.
-The modeling methodology of this study is summarized below.
+In this repository, we presented a programmatic tool called “DrugApp”, that utilize available clinical trial and patent related data together with physicochemical and molecular properties of drugs candidate compounds within a random forest classifier to predict their potential of getting regulatory approval as drugs for certain indications. The major contributions of this work are summarized below:
+* Presenting the method "DrugApp" which can predict drug approvals prospectively with reasonably high performance.
+* Preparing drug development-related property datasets (including features from patents, clinical trials, and physicochemical + molecular properties) by gathering and organizing data from multiple resources, which will be useful for further studies in terms of training and testing development-centric prediction models.
+* Identifying features that are important for drug approvals, which can be evaluated by experts to increase the efficiency of drug development procedures.
 
+The methodology applied while developing DrugApp is shown below.
 
 <img width="1201" alt="DrugApp_Figure1" src="https://user-images.githubusercontent.com/13165170/178265643-25759b13-cb62-414d-89b9-9a619eb2e5a2.png">
-
 
 ## Programming Environment and Files
 **Descriptions of folders and files:**
 
 *	**datasets** folder includes benchmark datasets constructed by applying extensive filtering operations. 
     * **raw_datasets** folder contains FDA-approved and FDA-unapproved drug indication pairs together with all features. One-hot encoded version of categorical features are also provided. FDA-approved and FDA-unapproved drugs are represented in the column called "Label" in binary classification format (i.e., 1:approved, 0:unapproved).
-    * **prospective_analysis_datasets** folder contains drug indication pairs together with all features for ongoing clinical trials.
-    * **training_datasets** folder contains feature vectors for unique FDA-approved and FDA-unapproved drugs.
-*	**scripts** folder includes script files required for the construction of model for predicting drug approval as well as for the determination of evaluation metrics and feature importances.
-*	**results** folder contains prediction results of each disease group for ongoing clinical trials. 
+    * **prospective_analysis_datasets** contains both raw feature files and ready to use feature vectors for drugs in ongoing clinical trials (as of May 2022).
+    * **training_datasets** contains training datasets of DrugApp (both raw feature files and ready to use feature vectors) for regulatorily approved and unapproved drugs. The column named "Label" indicates the approval status of the drug (i.e., 1:approved, 0:unapproved).
+*	**scripts** contains Python scripts required for the construction of DrugApp prediction models, as well as their performance evaluation via validation experiments, and feature importance identification.
+*	**results** contains the output of each DrugApp model considering both the model performance scores and approval prediction results for drugs in ongoing clinical trials (as of May 2022). 
 
 **Dependencies:**
 
@@ -28,7 +27,7 @@ The modeling methodology of this study is summarized below.
 * Matplotlib 3.2.2
 
 **Step-by-step operation:**
-1. We highly recommend you to use conda platform for installing dependencies properly. After installation of appropriate [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) version for your operating system, install dependencies as below:
+1. We recommend to use conda platform for installing dependencies properly. After installation of appropriate [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) version for your operating system, install dependencies as below:
 ```
 conda install -c anaconda scikit-learn=1.0.2
 conda install -c anaconda pandas=1.0.3
@@ -36,21 +35,21 @@ pip install numpy==1.19.5
 pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
-3. Set the location of the "scripts" folder present in "DrugApp-main" folder as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
+3. Set the location of the "scripts" folder (presented in the DrugApp main folder) as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
 
-**Example commands to run the scripts for predicting drug approval for disease class of your interest:**
+**Example commands to run the scripts for predicting drug approvals for disease group of your interest:**
    
-For predicting drug approval for a specific disease group, run the "rf_model_for_predicting_drug_approval.py" script for RF algorithm by defining the name of the drug_indication dataset (i.e., "Alimentary", "Infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
+For predicting drug approval for a specific disease group, run the "rf_model_for_predicting_drug_approval.py" script by defining the name of the drug_indication dataset (i.e., "Alimentary", "Infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as an argument, e.g.:
    
 ```
 python rf_model_for_predicting_drug_approval.py Rare
 ```
 
-The output will be a csv (comma-separated values) file, named as "predictions" (e.g. predictions_Rare).
+The output will be a csv file, name starting with "predictions" (e.g. predictions_Rare).
 
 **Example commands to run the scripts for evaluation metrics and feature importances:**
    
-For determining evaluation metrics and feature importances for a specific disease group, run the "evaluation_metrics_and_feature_importance.py" script by defining the name of the unique_drug dataset (i.e., "Alimentary", "Infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as parameter, e.g.:
+For calculating the performance of models and determining feature importances on a specific disease group dataset, run the "evaluation_metrics_and_feature_importance.py" script by giving the name of the dataset (i.e., "Alimentary", "Infective", "Blood", "Dermatological", "Heart", "Hormonal", "Immunological", "Musculoskeletal", "Neoplasms", "Nervous", "Rare", "Respiratory", "Sensory", and "Urinary") as an argument, e.g.:
    
 ```
 python evaluation_metrics_and_feature_importance.py Rare
