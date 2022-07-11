@@ -59,7 +59,9 @@ For calculating the performance of models and determining feature importances on
 ```
 python evaluation_metrics_and_feature_importance.py Rare
 ```
-   
+
+The output will be performance results, a graph for permutation importance, and a csv file for MDI based feature importance, name starting with "results_feature_importances_MDI" (e.g. results_feature_importances_MDI_Rare).
+
 ## License
 
 Copyright (C) 2022 HUBioDataLab
