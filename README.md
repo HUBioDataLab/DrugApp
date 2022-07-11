@@ -50,7 +50,7 @@ For predicting drug approval for a specific disease group, run the "rf_model_for
 python rf_model_for_predicting_drug_approval.py Rare
 ```
 
-The output will be a csv file, name starting with "predictions" (e.g. predictions_Rare).
+The output will be a csv file, name starting with "results_prospective_analysis" (e.g. results_prospective_analysis_Rare).
 
 **Example commands to run the scripts for evaluation metrics and feature importances:**
    
