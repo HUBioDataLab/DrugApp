@@ -1,18 +1,20 @@
 # DrugApp: A Method for Machine Learning-based Prediction of Drug Approval
 In this repository, we presented a programmatic tool called “DrugApp”, that utilize available clinical trial and patent related data together with physicochemical and molecular properties of drugs candidate compounds within a random forest classifier to predict their potential of getting regulatory approval as drugs for certain indications. The major contributions of this work are summarized below:
+
 * Presenting the method "DrugApp" which can predict drug approvals prospectively with reasonably high performance.
 * Preparing drug development-related property datasets (including features from patents, clinical trials, and physicochemical + molecular properties) by gathering and organizing data from multiple resources, which will be useful for further studies in terms of training and testing development-centric prediction models.
 * Identifying features that are important for drug approvals, which can be evaluated by experts to increase the efficiency of drug development procedures.
 
-The methodology applied while developing DrugApp is shown below.
+The methodology followed while developing DrugApp is shown below.
 
 <img width="1201" alt="DrugApp_Figure1" src="https://user-images.githubusercontent.com/13165170/178265643-25759b13-cb62-414d-89b9-9a619eb2e5a2.png">
 
-## Programming Environment and Files
+
+## Programming Environment, Folders/Files and Dependencies
+
 **Descriptions of folders and files:**
 
 *	**datasets** folder includes benchmark datasets constructed by applying extensive filtering operations. 
-    * **raw_datasets** folder contains FDA-approved and FDA-unapproved drug indication pairs together with all features. One-hot encoded version of categorical features are also provided. FDA-approved and FDA-unapproved drugs are represented in the column called "Label" in binary classification format (i.e., 1:approved, 0:unapproved).
     * **prospective_analysis_datasets** contains both raw feature files and ready to use feature vectors for drugs in ongoing clinical trials (as of May 2022).
     * **training_datasets** contains training datasets of DrugApp (both raw feature files and ready to use feature vectors) for regulatorily approved and unapproved drugs. The column named "Label" indicates the approval status of the drug (i.e., 1:approved, 0:unapproved).
 *	**scripts** contains Python scripts required for the construction of DrugApp prediction models, as well as their performance evaluation via validation experiments, and feature importance identification.
@@ -36,6 +38,9 @@ pip install matplotlib==3.2.2
 ```
 2. Clone this repository.
 3. Set the location of the "scripts" folder (presented in the DrugApp main folder) as the current working directory, and run the corresponding script to predict drug approval for disease class of your interest. 
+
+
+## How to Run DrugApp
 
 **Example commands to run the scripts for predicting drug approvals for disease group of your interest:**
    
