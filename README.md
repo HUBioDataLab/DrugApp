@@ -18,7 +18,7 @@ The methodology followed while developing DrugApp is shown below.
     * **prospective_analysis_datasets** contains both raw feature files and ready to use feature vectors for drugs in ongoing clinical trials.
     * **training_datasets** contains training datasets of DrugApp (both raw feature files and ready to use feature vectors) for regulatorily approved and unapproved drugs. The column named "Label" indicates the approval status of the drug (i.e., 1:approved, 0:unapproved).
 *	**scripts** contains Python scripts required for the construction of DrugApp prediction models, as well as their performance evaluation via validation experiments, and feature importance identification.
-*	**results** contains the output of each DrugApp model considering both the MDI-based feature importance and approval prediction results for drugs in ongoing clinical trials (performance results and permutation importance graphs are printed on the screen). 
+*	**results** contains the output of each DrugApp model considering both the MDI-based feature importance and approval prediction results for drugs in ongoing clinical trials (as of October 2020). Performance results and permutation importance graphs are printed on the screen. 
 
 **Dependencies:**
 
