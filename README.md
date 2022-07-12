@@ -18,7 +18,7 @@ The methodology followed while developing DrugApp is shown below.
     * **prospective_analysis_datasets** contains both raw feature files and ready to use feature vectors for drugs in ongoing clinical trials.
     * **training_datasets** contains training datasets of DrugApp (both raw feature files and ready to use feature vectors) for regulatorily approved and unapproved drugs. The column named "Label" indicates the approval status of the drug (i.e., 1:approved, 0:unapproved).
 *	**scripts** contains Python script files required for the construction of DrugApp prediction models, as well as their performance evaluation via validation experiments, and feature importance identification.
-*	**results** contains the output of DrugApp models considering both the MDI-based feature importances and approval prediction results for drugs in ongoing clinical trials (as of October 2020). Model performance scores and plots for permutation feature importance analysis are directly printed on the screen when the run is finished. 
+*	**results** contains the output of DrugApp models considering both the MDI-based feature importances (in the "results_feature_importances" folder) and approval prediction results for drugs in ongoing (as of October 2020) clinical trials (in the "results_prospective_analysis" folder). Model performance scores and plots for permutation feature importance analysis are directly printed on the screen when the run is finished. 
 
 **Dependencies:**
 
@@ -60,7 +60,7 @@ For calculating the performance of models and determining feature importances on
 python evaluation_metrics_and_feature_importance.py Rare
 ```
 
-The output will be the performance scores and a plot for permutation feature importance analysis, which are printed on the screen. Additionally, a csv file will be created (in the results folder) that contain the MDI based feature importance analysis results, where the file name will start with "results_feature_importances_MDI" (e.g. results_feature_importances_MDI_Rare).
+The output will be the performance scores and a plot for permutation feature importance analysis, which are printed on the screen. Additionally, a csv file will be created (in the "results_feature_importances" folder) that contain the MDI based feature importance analysis results, where the file name will start with "results_feature_importances_MDI" (e.g. results_feature_importances_MDI_Rare).
 
 ## License
 
