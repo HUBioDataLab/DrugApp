@@ -24,7 +24,7 @@ y = df["Label"]
 #Cross-validation:
 def RF_cv(model_name, X, y, classifier):
 
-    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
     
     clf = classifier 
     
