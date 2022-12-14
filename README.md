@@ -5,6 +5,10 @@ In this repository, we presented a programmatic tool called “DrugApp”, that 
 * Preparing drug development-related property datasets (including features from patents, clinical trials, and physicochemical + molecular properties) by gathering and organizing data from multiple resources, which will be useful for further studies in terms of training and testing development-centric prediction models.
 * Identifying features that are important for drug approvals, which can be evaluated by experts to increase the efficiency of drug development procedures.
 
+Please refer to our article for more information:
+
+Ciray, F. & Doğan, T. (2022). Machine Learning-based Prediction of Drug Approvals Using Molecular, Physicochemical, Clinical Trial and Patent Related Features. *Expert Opinion on Drug Discovery*, [DOI:10.1080/17460441.2023.2153830](https://doi.org/10.1080/17460441.2023.2153830).
+
 The methodology followed while developing DrugApp is shown below.
 
 <img width="1201" alt="DrugApp_Figure1" src="https://user-images.githubusercontent.com/13165170/178265643-25759b13-cb62-414d-89b9-9a619eb2e5a2.png">
